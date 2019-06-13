@@ -2,7 +2,7 @@ const request = require('request')
 
 const geocode = (address, callback) => {
     
-const url = 'https://api.mapbox.com/geocoding/v5/mapbox.places/' + address + '.json?access_token=' + 'TOKEN_HERE' + '&limit=1'
+    const url = 'https://api.darksky.net/forecast/8cd4b8c9f2234b25fd4acfd02656316b/' + latitude + ',' + longitude + '?units=si'
 
     request({ url: url, json: true }, (error, {body}) => {
         if (error) {
